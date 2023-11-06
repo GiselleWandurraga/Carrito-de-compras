@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.barra_fija {
+    width: 100%;
+    height: 2vh;
+    background-color: #FFF5EE;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    z-index: 100;
+
+}
+
+.nombre {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nombre_pag {
+    color: black;
+    font-size: 40px;
+    letter-spacing: 0.2em;
+    font-family: cursive;
+
+}
+
+.sesion_carrito {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.carrito {
+    background-color: white;
+    color: black;
+    padding: 7px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.cont_1 {
+    margin-top: 110px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 99;
+
+}
+
+.imgc1 {
+    width: 100%;
+    height: 600px;
+    background-image: url(./imagenes/fondo1.jpg);
+    filter: brightness(0.8);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.img2c1 {
+    width: 100%;
+    height: 600px;
+    background-image: url(./imagenes/fondo2.jpg);
+    filter: brightness(0.8);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.intermedio {
+    width: 100%;
+    height: 80px;
+    background-color: #e4dad4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.promocion {
+    color: black;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.bloq_prom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards {
+    background-color: white;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 100px 15%;
+    
+
+}
+
+.cards {
+   border: 3px solid rgb(176, 112, 112);
+   background-color: rgb(253, 242, 233);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.contenedor img {
+    margin-top: 15px;
+    width: 300px; 
+    height: 400px; }
+
+.nombre_articulo{
+    font-size: 20px;
+    margin-top: 15px;
+}
+.precio{
+    font-size: 20px;
+    margin-top: 15px;
+    font-family: cursive;
+    font-weight: 100;
+}
+.boton_agregar{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    width: 40%;
+    height: 15%;
+    border-radius: 0.5vmax;
+    background-color:rgb(241, 134, 122);
+    border: none;
+    color: white;
+    font-weight:bold;
+    padding: 8px;
+    font-size: 18px;
+}
+.fa-cart-plus{
+    font-size: 50px;
+}
