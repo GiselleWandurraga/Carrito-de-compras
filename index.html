@@ -16,7 +16,7 @@
             <h1 class="nombre_pag" href="">BOHEMIAN BLISS</h1>
         </div>
         <div class="sesion_carrito">
-            <i class="fa-solid fa-cart-plus" style="color: #f1867a;" onclick="Mostrar_carrito()"></i>
+            <i class="fa-solid fa-cart-plus" style="color: #f1867a;" onclick="abrirCarrito()"></i>
         </div>
     </div>
     <div class="contenedor">
@@ -36,6 +36,38 @@
             </div>
         </div>
         <div class="cards" id="cards">
+        </div>
+        <div id="modal" class="cerrar_carrito">
+            <div class="cont_carrito">
+                <span class="close" onclick="cerrarCarrito()">&times;</span>
+                <div id="carrito-container" class="carrito_container">
+                    <div id="productos-container">
+                        <div class="divtabla">
+                            <table class="tg"">
+                                <thead>
+                                  <tr>
+                                    <th class=" tg-0r6n">Imagen</th>
+                                <th class="tg-0r6n">Nombre</th>
+                                <th class="tg-0r6n">Precio</th>
+                                <th class="tg-0r6n">Cantidad</th>
+                                <th class="tg-0r6n">Subtotal</th>
+                                <th class="tg-0r6n">Eliminar</th>
+                                </tr>
+                                </thead>
+                                <tbody id="tabla">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="total_compra">
+                        <h1 class="text_total">Total de la compra </h1>
+                        <h1 class="total" id="tot"></h1>
+                    </div>
+                    <div class="vaciar">
+                        <button class="vaciar_carrito" onclick="vaciarCarrito()">Vaciar Carrito</button></div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
